@@ -1,8 +1,7 @@
 {
   "env": {
     "browser": true,
-    "es2021": true,
-    "node": true
+    "es2021": true
   },
   "extends": [
     "eslint:recommended",
@@ -37,10 +36,11 @@
     "react/prop-types": 0,
     "react/react-in-jsx-scope": 0,
     "@typescript-eslint/no-empty-function": 0,
-    "camelcase": "error",
     "spaced-comment": "error",
     "quotes": ["error", "single"],
-    "no-duplicate-imports": "error"
+    "no-duplicate-imports": "error",
+    "tailwindcss/no-custom-classname": 0,
+    "@typescript-eslint/restrict-template-expressions": 0
   },
   "settings": {
     "react": {
@@ -54,5 +54,6 @@
         "alwaysTryTypes": true
       }
     }
-  }
+  },
+  "ignorePatterns": ["*.config.cjs", "*.config.ts"]
 }
